@@ -39,8 +39,8 @@ libstlport_c_includes := \
 	bionic \
         bionic/libstdc++/include \
 
-libstlport_cflags := -D_GNU_SOURCE -fPIC
-libstlport_cppflags := -fuse-cxa-atexit -fPIC
+libstlport_cflags := -D_GNU_SOURCE -fPIC -Wno-unused-parameter
+libstlport_cppflags := -fuse-cxa-atexit -fPIC -Wno-unused-parameter
 
 ##########################################
 include $(CLEAR_VARS)
